@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+  font-family: 'Montserrat', sans serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  animation: slide 50s infinite;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-size: 50px; 
+}
+
+p{
+  color: white;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  grid-template-rows: 50px 1fr 50px; 
+  grid-template-areas: 
+    "aside header"
+    "aside main"
+    "aside footer";
+  
+}
+
+.main{
+  grid-area: main;
+}
+
+.header{
+  grid-area: header;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.aside{
+  grid-area: aside;
+}
+
+.clock {
+  color: black;
+  position: relative;
+  width: auto;
+  font-size: 250px;
+  padding-top: 600px;
+  padding-right: 100px;
+}
+
+.container-2{
+  text-align: center;
+}
+
+@keyframes slide{
+  0%{
+    background-image: url(images/bg1.jpg);
+  }
+
+  25%{
+    background-image: url(images/bg1.jpg);
+  }
+
+  50%{
+    background-image: url(images/bg2.jpg);
+  }
+
+  75%{
+    background-image: url(images/bg3.jpg);
+  }
+  100%{
+    background-image: url(images/bg4.jpg);
+  }
+}
+
+
+@media screen and (max-width: 2546px){
+
+  .clock{
+    color: white;
+    position: relative;
+    width: auto;
+    font-size: 250px;
+    padding-top: 225px;
+    padding-right: 100px;
+  }
+} 
+
+@media screen and (max-width: 1025px){
+ body{
+    background-repeat: no-repeat;
+    background-size: cover; 
+ }
+
+ .clock{
+    color: white;
+    position: relative;
+    width: auto;
+    font-size: 200px;
+    padding-top: 200px;
+    padding-right: 100px;
+  }
+
+	  @keyframes slide{
+	  0%{
+	    background-image: url(images/bg1.3.jpg);
+	  }
+
+	  25%{
+	    background-image: url(images/bg1.3.jpg);
+	  }
+
+	  50%{
+	    background-image: url(images/bg2.3.jpg);
+	  }
+
+	  75%{
+	    background-image: url(images/bg3.2.jpg);
+	  }
+	  100%{
+	    background-image: url(images/bg4.2.jpg);
+	  }
+	}
+
+} 
+
+@media screen and (max-width: 725px){
+ body{
+    background-repeat: no-repeat;
+    background-size: cover; 
+ }
+
+ .clock{
+    color: white;
+    position: relative;
+    width: auto;
+    font-size: 150px;
+    padding-top: 200px;
+    padding-right: 100px;
+  }
+
+	  @keyframes slide{
+	  0%{
+	    background-image: url(images/bg1.3.jpg);
+	  }
+
+	  25%{
+	    background-image: url(images/bg1.3.jpg);
+	  }
+
+	  50%{
+	    background-image: url(images/bg2.3.jpg);
+	  }
+
+	  75%{
+	    background-image: url(images/bg3.2.jpg);
+	  }
+	  100%{
+	    background-image: url(images/bg4.2.jpg);
+	  }
+	}
+
+} 
+
+@media screen and (max-width: 375px){
+
+	body{
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.clock{
+		color: white;
+		position: relative;
+		width: auto;
+		font-size: 90px;
+		padding-top: 200px;
+		padding-right: 100px;
+	}
+
+	@keyframes slide{
+	  0%{
+	    background-image: url(images/bg1.2.jpg);
+	  }
+
+	  25%{
+	    background-image: url(images/bg1.2.jpg);
+	  }
+
+	  50%{
+	    background-image: url(images/bg2.2.jpg);
+	  }
+
+	  75%{
+	    background-image: url(images/bg3.3.jpg);
+	  }
+	  100%{
+	    background-image: url(images/bg4.4.jpg);
+	  }
+	}
+}
+

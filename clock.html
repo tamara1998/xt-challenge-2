@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Space X klok</title>
+	<link rel="stylesheet" type="text/css" href="clock.css">
+	<script type="text/javascript">
+		function clock() {
+		var time = new Date(),
+    		hours = time.getHours(),
+   		 	minutes = time.getMinutes(),
+    	 	seconds = time.getSeconds();
+
+		document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+  
+  		function harold(standIn) {
+		    if (standIn < 10) {
+		      standIn = '0' + standIn
+		    }
+		    return standIn;
+		  }
+		}
+		setInterval(clock, 1000);
+	</script>
+</head>
+<body>
+	<div class="container">
+			<header class="header">
+				<h1>Space X</h1>
+			</header>
+			<aside class="aside"></aside>
+			<main class="main">
+				<div class="container-2">
+					<div class="clock"></div>
+				</div>
+			</main>
+		</div>
+</body>
+</html>
