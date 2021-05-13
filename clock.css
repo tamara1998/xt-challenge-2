@@ -20,6 +20,10 @@ p{
   color: black;
 }
 
+img{
+  background-color: no color;
+}
+
 /* background image */
 .morning{
   background: url(images/sun.jpg) no-repeat center fixed;
